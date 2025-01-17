@@ -20,7 +20,7 @@ class PaginationHelper {
   if(Number.isInteger(pageIndex) == false || pageIndex+1 > this.pageCount() || pageIndex < 0){
     return -1
   }
-    else if(pageIndex + 1 < this.pageCount()){
+    else if(pageIndex + 1 < this.pageCount() || this.collection.length % this.num === 0){
       return this.num;
     }
     else return this.collection.length % this.num
@@ -34,3 +34,21 @@ class PaginationHelper {
   else return Math.floor(itemIndex / this.num)
 	}
 }
+
+function getNiceNames(people){
+	//TODO
+	const niceList = people.filter((el) => el.wasNice == true)
+	if (niceList.length == 0){
+	  return []
+	}
+	else return niceList.map((el) => el.name);
+  }
+  
+  function getNaughtyNames(people){
+	//TODO
+	const naughtyList = people.filter((el) => el.wasNice == false)
+	if(naughtyList.length == 0){
+	  return []
+	}
+	else return naughtyList.map((el) => el.name)
+  }
