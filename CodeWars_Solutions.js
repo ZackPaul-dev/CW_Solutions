@@ -52,10 +52,15 @@ function getNiceNames(people){
 	}
 	else return naughtyList.map((el) => el.name)
   }
-  
+
   var isSquare = function(n){
 	if(Number.isInteger(Math.sqrt(n)) == true){
 	  return true;
 	}
 	else return false; // fix me
+  }
+
+  function removeEveryOther(arr){
+	//your code here
+	return arr.filter((el, i) => i % 2 ==0)
   }
