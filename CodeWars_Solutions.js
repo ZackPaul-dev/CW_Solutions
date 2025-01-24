@@ -64,3 +64,7 @@ function getNiceNames(people){
 	//your code here
 	return arr.filter((el, i) => i % 2 ==0)
   }
+
+  function litres(time) {
+	return Math.floor(time/2);
+  }
