@@ -68,3 +68,20 @@ function getNiceNames(people){
   function litres(time) {
 	return Math.floor(time/2);
   }
+
+  function countPositivesSumNegatives(input) {
+	// your code here
+	let pos = 0;
+	let sumNeg = 0;
+	if(Array.isArray(input) == false || input.length == 0 ){
+	  return []
+	}
+	else for(let el in input) {
+	  if(input[el] > 0){
+	  pos++
+	}
+	else sumNeg = sumNeg + input[el]
+	}
+	let result =[pos, sumNeg]
+	return result;
+  }
