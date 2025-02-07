@@ -85,3 +85,14 @@ function getNiceNames(people){
 	let result =[pos, sumNeg]
 	return result;
   }
+
+  function countSmileys(arr){
+	let faceRegex= /[:;][-~]?[)D]/
+	let count = 0;
+	for(face of arr){
+	  if(faceRegex.test(face)){
+		 count++;
+		 }
+	}
+	return count;
+  }
