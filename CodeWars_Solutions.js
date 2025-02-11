@@ -20,7 +20,7 @@ class PaginationHelper {
   if(Number.isInteger(pageIndex) == false || pageIndex+1 > this.pageCount() || pageIndex < 0){
     return -1
   }
-    else if(pageIndex + 1 < this.pageCount() || this.collection.length % this.num === 0){
+    else if(pageIndex + 1 < this.pageCount()){
       return this.num;
     }
     else return this.collection.length % this.num
@@ -34,65 +34,3 @@ class PaginationHelper {
   else return Math.floor(itemIndex / this.num)
 	}
 }
-
-function getNiceNames(people){
-	//TODO
-	const niceList = people.filter((el) => el.wasNice == true)
-	if (niceList.length == 0){
-	  return []
-	}
-	else return niceList.map((el) => el.name);
-  }
-  
-  function getNaughtyNames(people){
-	//TODO
-	const naughtyList = people.filter((el) => el.wasNice == false)
-	if(naughtyList.length == 0){
-	  return []
-	}
-	else return naughtyList.map((el) => el.name)
-  }
-
-  var isSquare = function(n){
-	if(Number.isInteger(Math.sqrt(n)) == true){
-	  return true;
-	}
-	else return false; // fix me
-  }
-
-  function removeEveryOther(arr){
-	//your code here
-	return arr.filter((el, i) => i % 2 ==0)
-  }
-
-  function litres(time) {
-	return Math.floor(time/2);
-  }
-
-  function countPositivesSumNegatives(input) {
-	// your code here
-	let pos = 0;
-	let sumNeg = 0;
-	if(Array.isArray(input) == false || input.length == 0 ){
-	  return []
-	}
-	else for(let el in input) {
-	  if(input[el] > 0){
-	  pos++
-	}
-	else sumNeg = sumNeg + input[el]
-	}
-	let result =[pos, sumNeg]
-	return result;
-  }
-
-  function countSmileys(arr){
-	let faceRegex= /[:;][-~]?[)D]/
-	let count = 0;
-	for(face of arr){
-	  if(faceRegex.test(face)){
-		 count++;
-		 }
-	}
-	return count;
-  }
