@@ -42,9 +42,29 @@ var isAnagram = function(test, original) {
 	return str.split(' ').reverse().join(' ');
 	
   }
-  
+
   function stringToArray(string){
 
 	return string.split(' ')
   
+  }
+  function updateLight(current) {
+  
+	return current == 'green' ? 'yellow' :
+	current == 'yellow' ? 'red' :
+	'green'
+  
+  }
+
+  function solution(number){
+	let arr = [];
+	if(number <= 0){
+	  return 0
+	}
+	else for(let i = 0; i < number; i++){
+	  if(i % 3 == 0 || i % 5 == 0){
+		arr.push(i)
+	  }
+	}
+	return arr.reduce((acc, curr) => acc + curr);
   }
