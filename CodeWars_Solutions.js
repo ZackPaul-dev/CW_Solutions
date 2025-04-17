@@ -80,3 +80,21 @@ var isAnagram = function(test, original) {
 	const phone = `(${part1}) ${part2}-${part3}`
 	return phone;
   }
+
+  function duplicateCount(text){
+	let arr = text.toLowerCase().split('')
+	let cache = {}
+	let count = 0
+  
+	arr.forEach((el) => {
+	  if(cache[el] >0){
+		cache[el]++
+	  }
+	  else cache[el] = 1
+	})
+	console.log(cache)
+	for(let i in cache){
+	  cache[i] > 1 ? count++ : false
+	}
+	return count
+  }
