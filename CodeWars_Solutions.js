@@ -68,3 +68,15 @@ var isAnagram = function(test, original) {
 	}
 	return arr.reduce((acc, curr) => acc + curr);
   }
+  
+  function createPhoneNumber(numbers){
+	if(numbers.length != 10){
+	  return "Invalid Input"
+	}
+	let part1 = numbers.slice(0,3).join('')
+	let part2 = numbers.slice(3,6).join('')
+	let part3 = numbers.slice(6).join('')
+	
+	const phone = `(${part1}) ${part2}-${part3}`
+	return phone;
+  }
