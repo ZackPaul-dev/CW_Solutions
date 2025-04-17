@@ -42,3 +42,9 @@ var isAnagram = function(test, original) {
 	return str.split(' ').reverse().join(' ');
 	
   }
+  
+  function stringToArray(string){
+
+	return string.split(' ')
+  
+  }
