@@ -98,7 +98,7 @@ var isAnagram = function(test, original) {
 	}
 	return count
   }
-  
+
   function XO(str) {
 	let xNum = 0;
 	 let oNum = 0;
@@ -113,3 +113,7 @@ var isAnagram = function(test, original) {
 	 })
 	 return xNum === oNum
    }
+
+   function past(h, m, s){
+	return (h * 3600000) + (m * 60000) + (s *1000)
+  }
