@@ -37,3 +37,8 @@ class PaginationHelper {
 var isAnagram = function(test, original) {
 	return test.toLowerCase().split('').sort().join('') === original.toLowerCase().split('').sort().join('')
    }
+
+   function nameShuffler(str){
+	return str.split(' ').reverse().join(' ');
+	
+  }
