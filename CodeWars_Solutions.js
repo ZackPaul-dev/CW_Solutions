@@ -98,3 +98,18 @@ var isAnagram = function(test, original) {
 	}
 	return count
   }
+  
+  function XO(str) {
+	let xNum = 0;
+	 let oNum = 0;
+	
+	 str.toLowerCase().split('').forEach((el) => {
+	   if(el == 'x'){
+		 xNum++
+	   }
+	   else if(el == 'o'){
+		 oNum++
+	   }
+	 })
+	 return xNum === oNum
+   }
