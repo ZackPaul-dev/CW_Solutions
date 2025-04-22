@@ -123,3 +123,13 @@ var isAnagram = function(test, original) {
 	return arr.map((x) => x.length > 4 ? x.split('').reverse().join('')
 		   : x).join(' ')
   }
+  
+  function digitalRoot(n) {
+	let arr = n.toString().split('')
+	if(arr.length > 1){
+	  n = arr.reduce((a,b) => Number(a)+Number(b))
+	  console.log(n)
+	  return digitalRoot(n)
+	}
+	return n
+  }
