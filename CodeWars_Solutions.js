@@ -117,3 +117,9 @@ var isAnagram = function(test, original) {
    function past(h, m, s){
 	return (h * 3600000) + (m * 60000) + (s *1000)
   }
+  function spinWords(string){
+	let arr = string.split(' ')
+   
+	return arr.map((x) => x.length > 4 ? x.split('').reverse().join('')
+		   : x).join(' ')
+  }
