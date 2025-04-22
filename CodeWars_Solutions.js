@@ -137,3 +137,11 @@ var isAnagram = function(test, original) {
   function getAverage(marks){
 	return Math.floor(marks.reduce((a, b) => a + b) / marks.length)
   }
+
+  function findUniq(arr) {
+	let sort = arr.sort((a, b) => a -b);
+	 if(sort[0] != sort[1]){
+	   return sort[0]
+	 }
+	 else return sort[sort.length - 1]
+   }
