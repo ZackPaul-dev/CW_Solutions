@@ -123,7 +123,7 @@ var isAnagram = function(test, original) {
 	return arr.map((x) => x.length > 4 ? x.split('').reverse().join('')
 		   : x).join(' ')
   }
-  
+
   function digitalRoot(n) {
 	let arr = n.toString().split('')
 	if(arr.length > 1){
@@ -132,4 +132,8 @@ var isAnagram = function(test, original) {
 	  return digitalRoot(n)
 	}
 	return n
+  }
+
+  function getAverage(marks){
+	return Math.floor(marks.reduce((a, b) => a + b) / marks.length)
   }
