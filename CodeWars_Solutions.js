@@ -168,3 +168,6 @@ var isAnagram = function(test, original) {
 	}
 	return `${hours}:${minutes}:${seconds}`;
   }
+  function invert(array) {
+	return array.map((x) => x * -1);
+ }
