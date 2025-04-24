@@ -186,3 +186,15 @@ var isAnagram = function(test, original) {
 	}
 	else return false;
   }
+
+  var number = function(busStops){
+	let totalOn = 0;
+	let totalOff = 0;
+   
+	busStops.map((arr) => {
+	  totalOn += arr[0]
+	  totalOff += arr[1]
+	})
+   
+	return totalOn - totalOff;
+  }
