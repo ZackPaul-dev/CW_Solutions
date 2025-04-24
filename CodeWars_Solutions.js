@@ -171,3 +171,11 @@ var isAnagram = function(test, original) {
   function invert(array) {
 	return array.map((x) => x * -1);
  }
+
+ function removeUrlAnchor(url){
+	let arr = url.split('')
+   
+	arr.map((x, i) => x === '#' ? arr.splice(i, arr.length - i) : x)
+			   
+				return arr.join('')
+  }
