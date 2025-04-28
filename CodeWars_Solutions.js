@@ -203,3 +203,7 @@ var isAnagram = function(test, original) {
 	arr.sort((a, b) => a-b)
 	return arr[0];
   }
+
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+	return fuelLeft * mpg >= distanceToPump
+  };
