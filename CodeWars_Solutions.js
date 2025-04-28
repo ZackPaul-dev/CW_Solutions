@@ -207,3 +207,10 @@ var isAnagram = function(test, original) {
   const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 	return fuelLeft * mpg >= distanceToPump
   };
+
+  function combat(health, damage) {
+	if(health - damage < 0){
+	  return 0
+	}
+	else return health - damage
+  }
