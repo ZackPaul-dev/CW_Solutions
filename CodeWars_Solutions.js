@@ -222,3 +222,7 @@ var isAnagram = function(test, original) {
 	}
 	return arr;
   }
+
+  function unusualFive() {
+	return "five!".length
+  }
