@@ -214,3 +214,11 @@ var isAnagram = function(test, original) {
 	}
 	else return health - damage
   }
+
+  function findMultiples(integer, limit) {
+	let arr = []
+	for(let i = 1; i * integer <= limit; i++){
+	  arr.push(i * integer)
+	}
+	return arr;
+  }
