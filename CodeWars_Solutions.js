@@ -226,3 +226,6 @@ var isAnagram = function(test, original) {
   function unusualFive() {
 	return "five!".length
   }
+  function booleanToString(b){
+	return String(b)
+  }
