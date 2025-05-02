@@ -234,3 +234,14 @@ var isAnagram = function(test, original) {
 {
   return string.replaceAll('5', 'S').replaceAll('0', 'O').replaceAll('1', 'I')
 	}
+
+	const sequenceSum = (begin, end, step) => {
+		let arr = []
+		if(begin > end){
+		  return 0
+		}
+		for(let i = begin; i<= end; i += step){
+		  arr.push(i)
+		}
+		return arr.reduce((a, b) => a + b)
+	  };
