@@ -245,3 +245,10 @@ var isAnagram = function(test, original) {
 		}
 		return arr.reduce((a, b) => a + b)
 	  };
+	
+	  function plural(n) {
+		if(n < 1 || n > 1){
+		  return true
+		}
+		else return false
+	  }
