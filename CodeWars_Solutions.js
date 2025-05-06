@@ -252,3 +252,7 @@ var isAnagram = function(test, original) {
 		}
 		else return false
 	  }
+
+	  function hero(bullets, dragons){
+		return bullets / 2 >= dragons;
+	   }
