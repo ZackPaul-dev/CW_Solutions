@@ -264,4 +264,10 @@ var isAnagram = function(test, original) {
 		return arr1[0] == arr2[0] && arr1[arr1.length-1] == arr2[arr2.length-1]
 		}
 		
-		
+		function pipeFix(numbers){
+			let arr =[]
+			for(let i = numbers[0]; i<= numbers[numbers.length-1]; i++){
+			  arr.push(i)
+			}
+			 return arr;
+		   }
