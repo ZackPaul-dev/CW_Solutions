@@ -271,3 +271,10 @@ var isAnagram = function(test, original) {
 			}
 			 return arr;
 		   }
+
+		   function helloWorld(){
+			let str = "Hello World!"
+			  console.log(str)
+			}
+			
+			
