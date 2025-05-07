@@ -282,4 +282,10 @@ var isAnagram = function(test, original) {
 				n >= 5 && n < 10 ? n * 95 :
 				n * 90
 			  }
+
+			  function removeExclamationMarks(s) {
+				return s.replaceAll('!', '');
+			  }
+			  
+			  
 			
