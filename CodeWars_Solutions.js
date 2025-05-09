@@ -287,5 +287,7 @@ var isAnagram = function(test, original) {
 				return s.replaceAll('!', '');
 			  }
 			  
-			  
+			  function gotta(){
+				return "greensquare!"
+			  }
 			
