@@ -291,3 +291,297 @@ var isAnagram = function(test, original) {
 				return "greensquare!"
 			  }
 			
+			  function getNiceNames(people){
+				//TODO
+				const niceList = people.filter((el) => el.wasNice == true)
+				if (niceList.length == 0){
+				  return []
+				}
+				else return niceList.map((el) => el.name);
+			  }
+			  
+			  function getNaughtyNames(people){
+				//TODO
+				const naughtyList = people.filter((el) => el.wasNice == false)
+				if(naughtyList.length == 0){
+				  return []
+				}
+				else return naughtyList.map((el) => el.name)
+			  }
+			
+			  var isSquare = function(n){
+				if(Number.isInteger(Math.sqrt(n)) == true){
+				  return true;
+				}
+				else return false; // fix me
+			  }
+			
+			  function removeEveryOther(arr){
+				//your code here
+				return arr.filter((el, i) => i % 2 ==0)
+			  }
+			
+			  function litres(time) {
+				return Math.floor(time/2);
+			  }
+			
+			  function countPositivesSumNegatives(input) {
+				// your code here
+				let pos = 0;
+				let sumNeg = 0;
+				if(Array.isArray(input) == false || input.length == 0 ){
+				  return []
+				}
+				else for(let el in input) {
+				  if(input[el] > 0){
+				  pos++
+				}
+				else sumNeg = sumNeg + input[el]
+				}
+				let result =[pos, sumNeg]
+				return result;
+			  }
+			
+			  function countSmileys(arr){
+				let faceRegex= /[:;][-~]?[)D]/
+				let count = 0;
+				for(face of arr){
+				  if(faceRegex.test(face)){
+					 count++;
+					 }
+				}
+				return count;
+			  }
+			
+			  function getAge(inputString){
+				// return the girl's correct age as an integer. Happy coding :) 
+				  return Number(inputString.substring(0,1))
+				}
+			
+				function sumTwoSmallestNumbers(numbers) { 
+					let newArr = numbers.sort((a,b)=>a-b)
+					return newArr[0] + newArr[1]
+				  }
+			
+				  function squareSum(numbers){
+					let newArr = numbers.map((el) => el * el);
+					if(numbers.length == 0){
+					  return 0
+					}
+					else
+					return newArr.reduce((acc, curr) => acc + curr);
+				  }
+			
+				  function openOrSenior(data){
+					let result = []
+					for(const el of data){
+					if(el[0] > 54 && el[1] > 7){
+					result.push("Senior")
+					}
+					else result.push("Open")
+					}
+					return result
+				  }
+			
+				  function makeUpperCase(str) {
+					return str.toUpperCase();
+				  }
+			
+				  function findShort(s){
+					let arr = s.split(' ');
+					arr = arr.map((x) => x.length)
+					arr.sort((a, b) => a-b)
+					return arr[0]
+				  }
+			
+				  function arithmetic(a, b, operator){
+					return operator === "add" ? a + b
+					: operator === "subtract" ? a - b
+					: operator === "multiply" ? a * b
+					: operator === "divide" ? a / b
+					: "not math!";
+				  }
+			
+				  ​
+			You
+			​
+			function validatePIN (pin) {
+			  let invalid = /[^0-9]/
+			  if(invalid.test(pin) == true){
+				return false
+			  }
+			  else if(pin.length == 4 || pin.length == 6){
+				return true
+			  }
+			  else return false
+			}
+			function lovefunc(flower1, flower2){
+			 
+				return (flower1 + flower2) % 2 == 1 ? true : false  
+				}
+			
+				function opposite(number) {
+					return number * -1
+				  }
+				  const areaOrPerimeter = function(l , w) {
+					if(l == w){
+					  return l * w
+					}
+					else return (l*2) + (w * 2)
+				  };
+			
+				  function solution(string) {
+					const regex = /[A-Z]/g
+					const arr = string.split('');
+					 const newStr = arr.map((x) => regex.test(x) == true ?  ' ' + x : x)
+					 
+					 return newStr.join('')
+				  }
+			
+				  function checkForFactor (base, factor) {
+					return base % factor == 0 ? true : false;
+				  }
+						
+				  var summation = function (num) {
+					let sum = 0
+					for(let i = 1; i <= num; i++){
+					  sum += i;
+					}
+					return sum
+				  }
+				  
+				  function square(num){
+					return num * num
+				  }
+						function deleteNth(arr,n){
+			  let cache = {};
+			  return arr.filter(function(x){
+				cache[x] = (cache[x] || 0) +1
+				return cache[x] <= n;
+			  })
+			}
+			function hoopCount (n) {
+				return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it"
+			 }
+			 
+			 function switchItUp(number){
+			   switch(number){
+				   case 0 : return 'Zero';
+				   break;
+				   case 1 : return 'One';
+				   break;
+				   case 2 : return 'Two';
+				   break;
+				   case 3 : return 'Three';
+				   break;
+				   case 4 : return 'Four';
+				   break;
+				   case 5 : return 'Five';
+				   break;
+				   case 6 : return 'Six';
+				   break;
+				   case 7 : return 'Seven';
+				   break;
+				   case 8 : return 'Eight';
+				   break;
+				   case 9 : return 'Nine';
+				   break;
+			   }
+			 }
+			
+			 function solution(str){
+				return str.split('').reverse().join('');
+			  }
+			
+			  function areYouPlayingBanjo(name) {
+			  return name.charAt(0) === 'R' || name.charAt(0) === 'r' ? `${name} plays banjo`
+			  : `${name} does not play banjo`
+			 
+			}
+			
+			function findOdd(A) {
+			  //create empty cache object to track occurrences
+			  let cache = {};
+			  //iterate through array adding occurrences of elements as value in key : value pair
+			  A.forEach((x) => cache[x] = (cache[x] || 0) +1)
+			  //return the key that has an odd value in cache object
+			  return Number(Object.keys(cache).find((key) => cache[key] % 2 === 1))
+			}
+			
+			var uniqueInOrder=function(iterable){
+				let arr = []
+				let ans = []
+				//test for string or array, if string then split into array
+				if(typeof iterable === "string"){
+				  arr = iterable.split('')
+				}
+				else arr = iterable;
+				//iterate over array, compare current entry to previous, if previous is same as current then remove previous, otherwise continue
+				 arr.forEach((el, i) => {if(el != arr[i-1]){
+				  ans.push(el)}                      
+				})
+				return ans
+			  }
+			
+			  var min = function(list){
+				list.sort((a, b) => a-b)
+				return list[0];
+			}
+			
+			var max = function(list){
+				list.sort((a, b) => a-b)
+				return list[list.length-1];
+			}
+			
+			function sortByLength (array) {
+				// Return an array containing the same strings,
+				// ordered from shortest to longest
+			   
+				  return array.sort((a, b) => a.length - b.length);
+			  }
+			  
+			  function rowSumOddNumbers(n) {
+			return n * n * n
+			}
+			
+			function setAlarm(employed, vacation){
+				return employed == true && vacation == false ? true : false
+				}
+			
+				function between(a, b) {
+					let arr = []
+					for(let i = a; i <= b; i++){
+					  arr.push(i)
+					}
+					return arr;
+				  }
+			
+				  function isPangram(string){
+					let chars = [...new Set(string.toLowerCase())]
+					chars = chars.filter((x) => x.charCodeAt(0) > 96 && x.charCodeAt(0) < 123).join('')
+					return chars.length === 26
+				  }
+			
+				  function calculateYears(principal, interest, tax, desired) {
+			  let years = 0;
+				for(let i = principal; i < desired; i = i + ((i * interest) - (i * interest *tax))){
+				  years++
+				}
+			  return years
+			}
+			function solution(nums){
+			
+				if(nums != null){
+				 return nums.sort((a, b) => a - b)
+				}
+				  else return []
+				}
+				function filter_list(l) {
+					return l.filter((el) => Number.isInteger(el) == true)
+				  }	
+			
+				  function hero(bullets, dragons){
+					return bullets / 2 >= dragons;
+				   }
+			
+				   console.log('didwork')
