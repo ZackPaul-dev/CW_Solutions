@@ -585,3 +585,7 @@ var isAnagram = function(test, original) {
 				   }
 			
 				   console.log('didwork')
+
+				   function hackingPhotosynthesis(){
+					console.log('I\'m in.')
+				   }
