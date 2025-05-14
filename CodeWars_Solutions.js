@@ -589,3 +589,7 @@ var isAnagram = function(test, original) {
 				   function hackingPhotosynthesis(){
 					console.log('I\'m in.')
 				   }
+
+				   function getChar(c){
+					return String.fromCharCode(c)
+				  }
