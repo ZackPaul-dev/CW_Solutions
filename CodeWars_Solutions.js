@@ -593,3 +593,7 @@ var isAnagram = function(test, original) {
 				   function getChar(c){
 					return String.fromCharCode(c)
 				  }
+
+				  function sumStr(a,b) {
+					return String(Number(a) + Number(b))
+				  }
