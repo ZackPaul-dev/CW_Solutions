@@ -609,3 +609,14 @@ var isAnagram = function(test, original) {
 				  String.prototype.isUpperCase = function() {
 					return this.toUpperCase() === this.toString()
 				  }
+
+				  function remove (string) {
+ 
+					let arr = string.split('')
+				   
+					if(arr[arr.length-1] == '!'){
+					  arr.pop()
+					}
+				   
+					return arr.join('')
+				  }
