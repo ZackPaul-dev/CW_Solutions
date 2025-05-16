@@ -661,3 +661,9 @@ function nbDig(n, d) {
   })
   return count;
 }
+
+function reverse(string){
+  let arr = string.split(' ');
+  
+  return arr.reverse().join(' ');
+}
