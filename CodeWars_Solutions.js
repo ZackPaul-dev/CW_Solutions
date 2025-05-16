@@ -646,3 +646,18 @@ var isAnagram = function(test, original) {
   }
   else return false
 }
+
+function nbDig(n, d) {
+    let arr = [];
+    let count = 0;
+  for(let i = 0; i <= n; i++){
+    arr.push(i ** 2)
+  }
+  let arr2 = arr.join('').split('')
+  arr2.forEach((x) => {
+    if(x == d){
+      count++;
+    }
+  })
+  return count;
+}
