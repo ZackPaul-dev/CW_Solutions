@@ -605,3 +605,7 @@ var isAnagram = function(test, original) {
 					: 4
 				   
 				  }
+
+				  String.prototype.isUpperCase = function() {
+					return this.toUpperCase() === this.toString()
+				  }
