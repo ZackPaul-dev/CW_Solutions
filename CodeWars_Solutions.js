@@ -667,3 +667,10 @@ function reverse(string){
   
   return arr.reverse().join(' ');
 }
+
+function bmi(weight, height) {
+  return weight / height ** 2 <= 18.5 ? "Just fine"
+        : weight / height ** 2 <= 25.0 ? "that guy"
+        : weight / height ** 2 <= 30.0 ? "pretty cool"
+        : "extra cool"
+}
