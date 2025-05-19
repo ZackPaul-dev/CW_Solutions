@@ -674,3 +674,8 @@ function bmi(weight, height) {
         : weight / height ** 2 <= 30.0 ? "pretty cool"
         : "extra cool"
 }
+
+function minValue(values){
+  let uniqueArr = [...new Set(values)];
+  return Number(uniqueArr.sort((a,b) => a - b).join(''));
+}
