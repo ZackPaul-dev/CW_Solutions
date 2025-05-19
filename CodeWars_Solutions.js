@@ -679,3 +679,11 @@ function minValue(values){
   let uniqueArr = [...new Set(values)];
   return Number(uniqueArr.sort((a,b) => a - b).join(''));
 }
+
+function gimme (triplet) {
+  let arr = triplet.slice();
+  let sort = triplet.sort((a,b) => a -b);
+  let mid = sort[1];
+  return arr.indexOf(mid);
+}
+
