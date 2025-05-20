@@ -691,3 +691,17 @@ function round5(n){
 	return Math.ceil(n/5) * 5;
 }
 
+function sumDigits(number) {
+  let arr = String(number).split('')
+  
+  arr.map((el) => {
+    if(el === '-'){
+      arr.splice(arr[el], 1);
+      Number(arr[el + 1]) * -1;
+    }
+  })
+  if(arr.length === 1){
+    return Number(arr[0])
+  }
+  return arr.reduce((a, b) => Number(a) + Number(b))
+}
