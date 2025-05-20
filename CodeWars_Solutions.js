@@ -687,3 +687,7 @@ function gimme (triplet) {
   return arr.indexOf(mid);
 }
 
+function round5(n){
+	return Math.ceil(n/5) * 5;
+}
+
