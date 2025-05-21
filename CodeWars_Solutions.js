@@ -705,3 +705,7 @@ function sumDigits(number) {
   }
   return arr.reduce((a, b) => Number(a) + Number(b))
 }
+
+function main (verb, noun){
+  return verb + noun;
+}
