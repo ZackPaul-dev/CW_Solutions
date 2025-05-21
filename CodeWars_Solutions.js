@@ -746,4 +746,11 @@ function equal5(){
   let a =  v2, //set number value to a
       b =  v4; //set number value to b
   return a % b;
+
+  function finalGrade (exam, projects) {
+  return exam > 90 || projects > 10 ? 100
+  : exam > 75 && projects > 4 ? 90
+  : exam > 50 && projects > 1 ? 75
+  : 0
+}
 }
