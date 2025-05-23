@@ -754,3 +754,5 @@ function equal5(){
   : 0
 }
 }
+
+console.log("square please!")
