@@ -792,3 +792,9 @@ function getGrade (s1, s2, s3) {
   : avg >= 60 ? 'D'
   : 'F'
 }
+
+function stringClean(s){
+  let cut = ['0','1','2','3','4','5','6','7','8','9']
+  
+  return s.split('').filter((el) => !cut.includes(el)).join('');
+}
