@@ -782,3 +782,13 @@ function gooseFilter (birds) {
   
   return birds.filter((el) => !geese.includes(el))
 };
+
+function getGrade (s1, s2, s3) {
+  let avg = (s1 + s2 + s3) / 3;
+  console.log(avg)
+  return avg > 90 ? 'A' 
+  : avg >= 80 ? 'B'
+  : avg >= 70 ? 'C'
+  : avg >= 60 ? 'D'
+  : 'F'
+}
