@@ -798,3 +798,11 @@ function stringClean(s){
   
   return s.split('').filter((el) => !cut.includes(el)).join('');
 }
+
+function countBy(x, n) {
+  let z = [];
+  for(let num = 1; num <= n; num++){
+    z.push(x * num);
+  }
+  return z;
+}
