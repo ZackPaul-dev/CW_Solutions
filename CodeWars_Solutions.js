@@ -811,3 +811,9 @@ function findDifference(a, b) {
   return Math.abs(a.reduce((x, y) => x*y) - b.reduce((x, y) => x * y));
 }
 
+function howManyLightsabersDoYouOwn(name) {
+  if(name === "Zach"){
+    return 18
+  }
+  return 0
+}
