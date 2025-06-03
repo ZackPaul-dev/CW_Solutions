@@ -817,3 +817,7 @@ function howManyLightsabersDoYouOwn(name) {
   }
   return 0
 }
+
+function position(letter){
+  return `Position of alphabet: ${letter.charCodeAt(0) - 96}`
+}
