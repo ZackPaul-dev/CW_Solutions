@@ -821,3 +821,14 @@ function howManyLightsabersDoYouOwn(name) {
 function position(letter){
   return `Position of alphabet: ${letter.charCodeAt(0) - 96}`
 }
+
+function mergeArrays(arr1, arr2) {
+  if(arr1 == [] && arr2 == []){
+    return []
+  }
+  let combArr = arr1.concat(arr2).sort((a, b) => a-b);
+ 
+  let unique = new Set(combArr);
+ 
+  return Array.from(unique);
+}
