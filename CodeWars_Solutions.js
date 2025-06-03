@@ -832,3 +832,8 @@ function mergeArrays(arr1, arr2) {
  
   return Array.from(unique);
 }
+
+function grow(x){
+ return x.reduce((a, b) => a * b);
+}
+
