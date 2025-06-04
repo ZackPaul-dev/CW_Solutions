@@ -837,3 +837,9 @@ function grow(x){
  return x.reduce((a, b) => a * b);
 }
 
+
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height
+  }
+}
