@@ -847,3 +847,10 @@ class Kata {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs((sonYearsOld * 2) - dadYearsOld)
 }
+
+
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
