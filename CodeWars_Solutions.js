@@ -856,3 +856,5 @@ var copaDelReyGoals = 5;
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
 return 'squaremeupdaddy!'
+
+return 'square'
