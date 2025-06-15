@@ -858,3 +858,5 @@ var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 return 'squaremeupdaddy!'
 
 return 'square'
+
+console.log('We gettin squares today')
