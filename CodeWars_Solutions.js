@@ -870,3 +870,9 @@ function take(arr, n) {
   console.log(arr);
   return take(arr, n)
 }
+
+
+function addFive(num) {
+  var total = num + 5
+  return total;
+}
