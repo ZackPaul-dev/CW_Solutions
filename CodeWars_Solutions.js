@@ -860,3 +860,13 @@ return 'squaremeupdaddy!'
 return 'square'
 
 console.log('We gettin squares today')
+
+function take(arr, n) {
+  if(arr.length <= n){
+    console.log(arr)
+    return arr;
+  }
+  else arr.pop();
+  console.log(arr);
+  return take(arr, n)
+}
