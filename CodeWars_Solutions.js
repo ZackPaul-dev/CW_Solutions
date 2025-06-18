@@ -889,3 +889,10 @@ function distinct(a) {
   })
   return arr;
 }
+
+function derive(coefficient,exponent) {
+  let num1 = coefficient * exponent;
+  let num2 = exponent - 1;
+ 
+  return `${num1}x^${num2}`;
+}
