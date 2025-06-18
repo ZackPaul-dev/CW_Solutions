@@ -879,3 +879,13 @@ function addFive(num) {
 
 console.log('green it up')
 
+
+function distinct(a) {
+  let arr =[];
+  a.forEach((el) => {
+    if(arr.includes(el) == false){
+      arr.push(el);
+    }
+  })
+  return arr;
+}
