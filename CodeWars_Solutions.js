@@ -896,3 +896,22 @@ function derive(coefficient,exponent) {
  
   return `${num1}x^${num2}`;
 }
+
+function nbYear(p0, percent, aug, p) {
+  let pop = p0;
+  let years = 0;
+  let result = increment(p0, percent, aug, p, years);
+ 
+ function increment(pop, percent, aug, p, years){
+  if(pop >= p){
+    console.log(years);
+    return years;
+  }
+  else pop = Math.floor(pop += pop * (percent * .01) + aug)
+  console.log(`${p0},${pop}`);
+      years++;
+  console.log(years);
+  return increment(pop, percent, aug, p, years);
+    }
+  return result;
+}
