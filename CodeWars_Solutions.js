@@ -915,3 +915,5 @@ function nbYear(p0, percent, aug, p) {
     }
   return result;
 }
+
+console.log('square me up brother')
