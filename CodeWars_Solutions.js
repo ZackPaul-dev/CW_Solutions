@@ -917,3 +917,7 @@ function nbYear(p0, percent, aug, p) {
 }
 
 console.log('square me up brother')
+
+function include(arr, item){
+  return arr.includes(item);
+}
