@@ -945,3 +945,8 @@ function exponent(a,b){
 function subt(a,b){
     return a-b;
 }
+
+function getSize(width, height, depth){
+  return [(2*width*height) + (2*height*depth) + (2*width*depth), width * height * depth];
+}
+
