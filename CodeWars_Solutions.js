@@ -984,3 +984,5 @@ let discount = price * Math.floor(quantity / 3);
  
   return quantity * price - discount;
 }
+
+return 'Squares all day!'
