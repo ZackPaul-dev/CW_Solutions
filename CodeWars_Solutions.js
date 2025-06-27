@@ -978,3 +978,9 @@ function getRealFloor(n) {
   n > 0 ? n - 1 :
   n
 }
+
+function mango(quantity, price){
+let discount = price * Math.floor(quantity / 3);
+ 
+  return quantity * price - discount;
+}
