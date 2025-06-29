@@ -986,3 +986,5 @@ let discount = price * Math.floor(quantity / 3);
 }
 
 return 'Squares all day!'
+
+console.log('gimme da green')
