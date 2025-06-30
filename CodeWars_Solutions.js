@@ -1008,3 +1008,5 @@ function strCount(str, letter){
   return count;
 
 }
+
+return 'all done!'
