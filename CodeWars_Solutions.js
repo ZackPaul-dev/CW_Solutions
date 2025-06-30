@@ -992,3 +992,19 @@ console.log('gimme da green')
 function dutyFree(normPrice, discount, hol){
   return Math.floor(hol / (normPrice * (discount * .01)))
 }
+
+function strCount(str, letter){  
+
+  let count = 0;
+ 
+  let arr = str.split('');
+ 
+  arr.forEach((el) => {
+    if(el == letter){
+      count++;
+    }
+  })
+ 
+  return count;
+
+}
