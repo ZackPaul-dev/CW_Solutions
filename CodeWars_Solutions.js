@@ -1012,3 +1012,5 @@ function strCount(str, letter){
 return 'all done!'
 
 return 'Happy square of bear!'
+
+return 'sqrsqrsqr'
