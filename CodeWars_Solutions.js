@@ -1016,3 +1016,5 @@ return 'Happy square of bear!'
 return 'sqrsqrsqr'
 
 return 'greenme'
+
+return 'green'
