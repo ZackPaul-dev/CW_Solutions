@@ -1056,3 +1056,4 @@ function calculator(a,b,sign){
   'unknown value'
 }
 
+return 'diddit!'
