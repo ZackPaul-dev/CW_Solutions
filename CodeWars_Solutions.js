@@ -1044,3 +1044,15 @@ return 'update'
 function isPalindrome(x) {
   return x.toLowerCase() === x.toLowerCase().split('').reverse().join('')
 }
+
+function calculator(a,b,sign){
+  if(Number.isInteger(a) == false || Number.isInteger(b) == false){
+    return 'unknown value'
+  }
+  return sign == '+' ? a + b :
+  sign == '-' ? a -b :
+  sign == '*' ? a * b :
+  sign == '/' ? a / b :
+  'unknown value'
+}
+
