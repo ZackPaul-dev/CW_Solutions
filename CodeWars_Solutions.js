@@ -1070,3 +1070,5 @@ function stairsIn20(s){
   
   return year.reduce((a,b) => a +b) * 20;
 }
+
+return 'Fribay!'
