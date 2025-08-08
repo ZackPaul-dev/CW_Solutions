@@ -1064,3 +1064,9 @@ function usdcny(usd) {
 }
 
 return 'woohoo!'
+
+function stairsIn20(s){
+  let year = s.flat(365);
+  
+  return year.reduce((a,b) => a +b) * 20;
+}
