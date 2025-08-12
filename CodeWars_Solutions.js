@@ -1072,3 +1072,8 @@ function stairsIn20(s){
 }
 
 return 'Fribay!'
+
+function twoDecimalPlaces(n) {
+  return Math.round(n * 100) / 100;
+}
+
