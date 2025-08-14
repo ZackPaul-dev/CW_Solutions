@@ -1103,3 +1103,5 @@ function getSum(a, b)
  
  return sum.toString(2);
 }
+
+return 'thursbday!'
