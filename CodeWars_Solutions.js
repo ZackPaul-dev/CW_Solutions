@@ -1113,3 +1113,5 @@ function twoSort(s) {
   
   return first.split('').join('***');
 }
+
+return "friyay!"
