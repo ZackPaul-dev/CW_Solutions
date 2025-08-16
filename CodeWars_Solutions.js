@@ -1115,3 +1115,5 @@ function twoSort(s) {
 }
 
 return "friyay!"
+
+return 'stirdee'
