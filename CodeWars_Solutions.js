@@ -1119,3 +1119,5 @@ return "friyay!"
 return 'stirdee'
 
 return 'ok!'
+
+return 'returned'
