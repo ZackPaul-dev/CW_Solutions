@@ -1121,3 +1121,5 @@ return 'stirdee'
 return 'ok!'
 
 return 'returned'
+
+return 'got scanned'
