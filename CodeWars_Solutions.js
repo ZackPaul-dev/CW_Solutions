@@ -1145,3 +1145,10 @@ function pushElement(arr){
   
   return arr
 }
+
+function pushElement(arr){
+  var el=1;
+  arr.push(el)
+  
+  return arr
+}
