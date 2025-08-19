@@ -1123,3 +1123,8 @@ return 'ok!'
 return 'returned'
 
 return 'got scanned'
+
+function getLength(arr){
+  //return length of arr
+  return arr.length
+}
