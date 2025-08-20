@@ -1152,3 +1152,14 @@ function pushElement(arr){
   
   return arr
 }
+
+function smallEnough(a, limit){
+  let result = true
+ a.forEach((el) => {
+   if(el > limit){
+     result = false
+   }
+   
+ })
+  return result;
+}
