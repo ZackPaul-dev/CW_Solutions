@@ -1178,3 +1178,21 @@ for (let i = 0; i < s.length; i++){
 }
 
 return 'dandadan'
+
+function noBoringZeros(n) {
+  let arr = String(n).split('');
+  
+  if(n = 0){
+    return 0
+  }
+  
+  else if(Number(arr[arr.length - 1]) === 0){
+    arr.pop()
+    
+   return noBoringZeros(arr.join(''))
+  }
+  
+   return Number(arr.join(''))
+  
+  
+}
