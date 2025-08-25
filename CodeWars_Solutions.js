@@ -1198,3 +1198,5 @@ function noBoringZeros(n) {
 }
 
 return 'gimmedat'
+
+return 'studied up today!'
