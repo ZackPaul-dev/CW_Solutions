@@ -1202,3 +1202,16 @@ return 'gimmedat'
 return 'studied up today!'
 
 return 'studierte'
+
+function stray(numbers) {
+  let result = 0;
+ 
+  let arr = numbers.sort((a, b) => a - b);
+
+  if(arr[0] === arr[1]){
+   
+    return arr[arr.length -1]
+  }
+  else return arr[0]
+
+  }
