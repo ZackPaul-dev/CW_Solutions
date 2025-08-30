@@ -1215,3 +1215,5 @@ function stray(numbers) {
   else return arr[0]
 
   }
+
+  return 'ok'
