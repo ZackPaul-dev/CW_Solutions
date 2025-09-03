@@ -1219,3 +1219,13 @@ function stray(numbers) {
   return 'ok'
 
   return 'Weeeekenmd'
+
+  function addLength(str) {
+ let arr = str.split(' ');
+ 
+  let res = arr.map((el) => el.concat(' ', String(el.length)))
+ 
+  return res;
+
+
+}
