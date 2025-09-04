@@ -1240,3 +1240,17 @@ function problem(x){
   return x * 50 + 6
 }
 
+function vowelIndices(word){
+  let test = word.split('');
+ let arr = [];
+  let vowels = "aeiouyAEIOUY";
+ 
+ test.forEach((el) => {
+   if(vowels.indexOf(el) != -1){
+     arr.push(test.indexOf(el) + 1)
+     test.splice(test.indexOf(el), 1, 'X')
+   }
+ })
+  return arr;
+}
+
