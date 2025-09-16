@@ -1297,3 +1297,15 @@ function rainAmount(mm){
     return "Your plant has had more than enough water for today!";
 }
 
+
+
+function contamination(text, char){
+  let result = ''
+  if(!text || !char){
+    return ''
+  }
+  else for(let i = 0; i < text.length; i ++){
+    result = result.concat(char)
+  }
+  return result;
+}
