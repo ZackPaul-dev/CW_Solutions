@@ -1321,3 +1321,8 @@ function binToDec(bin) {
   return parseInt(bin, 2);
 }
 
+function replace(s) {
+ const regex = /[aeiouAEIOU]/g;
+    return s.replaceAll(regex, '!');
+}
+
