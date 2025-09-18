@@ -1317,3 +1317,7 @@ function isLochNessMonster(s) {
   else return false
 }
 
+function binToDec(bin) {
+  return parseInt(bin, 2);
+}
+
