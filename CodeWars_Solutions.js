@@ -1336,3 +1336,24 @@ function factorial(n){
 }
 
 return 'mundee :|'
+
+function dnaStrand(dna){
+  let arr = dna.split('');
+  let result = [];
+  arr.forEach((el) => {
+    if(el == 'A'){
+      result.push('T')
+    }
+    else if(el == 'T'){
+      result.push('A')
+    }
+    else if(el == 'C'){
+      result.push('G')
+    }
+    else if(el == 'G'){
+      result.push('C')
+    }
+  })
+  return result.join('')
+}
+
