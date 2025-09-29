@@ -1372,3 +1372,10 @@ function apple(x){
 }
 
 return'I wun!'
+
+function shortenToDate(longDate) {
+  let arr = longDate.split(',')
+  arr.pop()
+ 
+  return arr.join(' ')
+}
