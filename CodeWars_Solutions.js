@@ -1411,3 +1411,4 @@ function  calculateAge(birth, year) {
   else return `You will be born in ${birth - year} years.`
 }
 
+return 'survived'
