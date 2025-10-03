@@ -1392,3 +1392,22 @@ function pickIt(arr){
  
   return [odd,even];
 }
+
+function  calculateAge(birth, year) {  
+  if(year - birth > 1){
+    return `You are ${year - birth} years old.`
+  }
+  else if(year - birth > 0){
+    return `You are ${year - birth} year old.`
+  }
+  else if(year - birth == 0){
+    return 'You were born this very year!'
+  }
+ 
+  else if(year - birth == -1){
+    return `You will be born in ${birth - year} year.`
+  }
+ 
+  else return `You will be born in ${birth - year} years.`
+}
+
