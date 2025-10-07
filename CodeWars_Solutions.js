@@ -1414,3 +1414,5 @@ function  calculateAge(birth, year) {
 return 'survived'
 
 return 'daweekend'
+
+return 'ok'
