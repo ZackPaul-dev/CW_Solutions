@@ -1423,3 +1423,10 @@ var greet = function(name) {
   return `Hello ${capName}!`
 };
 
+var greet = function(name) {
+  let namStart = name.toLowerCase();
+  let capName = namStart.charAt(0).toUpperCase() + namStart.slice(1)
+ 
+  return `Hello ${capName}!`
+};
+
