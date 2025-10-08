@@ -1416,3 +1416,10 @@ return 'survived'
 return 'daweekend'
 
 return 'ok'
+
+var greet = function(name) {
+  let capName = name.charAt(0).toUpperCase() + name.slice(1)
+ 
+  return `Hello ${capName}!`
+};
+
