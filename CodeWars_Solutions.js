@@ -1437,3 +1437,7 @@ function multiply(number){
   else return number * 5 ** (number.toString().length-1)
 }
 
+function trueOrFalse(val){
+  if (val == false || val == null || val == undefined)    return "false";            
+  else     return "true";
+}
