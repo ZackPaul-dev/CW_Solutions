@@ -1430,3 +1430,10 @@ var greet = function(name) {
   return `Hello ${capName}!`
 };
 
+function multiply(number){
+  if(number >= 0){
+ return number * 5 ** number.toString().length
+    }
+  else return number * 5 ** (number.toString().length-1)
+}
+
