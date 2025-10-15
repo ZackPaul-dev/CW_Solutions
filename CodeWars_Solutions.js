@@ -1445,3 +1445,17 @@ function trueOrFalse(val){
 return 'longweekend!'
 
 return 'somethin'
+
+function multipleOfIndex(array) {
+  let arr = []
+  array.forEach((el ,ind) => {
+    if(el === 0 && ind ===0){
+      arr.push(0)
+    }
+    else if(el % ind == 0){
+      arr.push(el)
+    }
+})
+  return arr;
+  }
+
