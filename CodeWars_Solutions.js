@@ -1460,3 +1460,5 @@ function multipleOfIndex(array) {
   }
 
   return 'madeit'
+
+  return 'sadurdee'
