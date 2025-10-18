@@ -1459,3 +1459,4 @@ function multipleOfIndex(array) {
   return arr;
   }
 
+  return 'madeit'
