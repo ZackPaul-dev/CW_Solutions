@@ -1468,3 +1468,5 @@ function multipleOfIndex(array) {
   return 'mondee off'
 
   return 'tuesdee'
+
+  return 'wemsdee'
