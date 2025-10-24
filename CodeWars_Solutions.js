@@ -1470,3 +1470,5 @@ function multipleOfIndex(array) {
   return 'tuesdee'
 
   return 'wemsdee'
+
+  return 'thurbsddee'
