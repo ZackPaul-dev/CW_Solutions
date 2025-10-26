@@ -1476,3 +1476,5 @@ function multipleOfIndex(array) {
   return 'fribdee!'
 
   return 'Halloweeeekend!'
+
+  return 'squer'
