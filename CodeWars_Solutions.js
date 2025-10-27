@@ -1478,3 +1478,8 @@ function multipleOfIndex(array) {
   return 'Halloweeeekend!'
 
   return 'squer'
+
+  function sortGiftCode(code){
+return code.split('').sort().join('')  
+
+}
