@@ -1483,3 +1483,16 @@ function multipleOfIndex(array) {
 return code.split('').sort().join('')  
 
 }
+
+function divCon(x){
+ let val = 0;
+ 
+  x.forEach((el) => {
+    if(typeof el === 'string'){
+      val = val - Number(el);
+    }
+    else val = val + el;
+  })
+ 
+  return val;
+}
