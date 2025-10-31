@@ -1496,3 +1496,5 @@ function divCon(x){
  
   return val;
 }
+
+return 'blugh'
