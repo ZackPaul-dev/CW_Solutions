@@ -1500,3 +1500,5 @@ function divCon(x){
 return 'blugh'
 
 return 'Halloweeeeeen!'
+
+return 'booted!'
