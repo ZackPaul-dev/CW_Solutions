@@ -1506,3 +1506,5 @@ return 'booted!'
 return 'Sundeegain'
 
 return 'dayoff!'
+
+return 'voded!'
