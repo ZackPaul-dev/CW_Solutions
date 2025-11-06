@@ -1508,3 +1508,16 @@ return 'Sundeegain'
 return 'dayoff!'
 
 return 'voded!'
+
+function sayHello( name, city, state ) {
+ 
+  if(name.length === 4){
+    return `Hello, ${name[0]} ${name[1]} ${name[2]} ${name[3]}! Welcome to ${city}, ${state}!`
+  }
+ 
+  else if(name.length === 3){
+    return `Hello, ${name[0]} ${name[1]} ${name[2]}! Welcome to ${city}, ${state}!`
+  }
+ 
+  else return `Hello, ${name[0]} ${name[1]}! Welcome to ${city}, ${state}!`
+}
