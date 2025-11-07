@@ -1543,3 +1543,23 @@ function calculateTip(amount, rating) {
   else return 'Rating not recognised'
 }
 
+function duckDuckGoose(players, goose) {
+
+  let nameArr = players.map(Player => Player.name)
+  console.log(nameArr)
+  
+ function gooseCheck(){
+   if(goose > nameArr.length){
+     goose = goose - nameArr.length;
+     gooseCheck();
+   }
+ }
+  
+  gooseCheck();
+  
+  if(goose === 0){
+    return nameArr[goose]
+  }
+  else return nameArr[goose - 1];
+}
+
