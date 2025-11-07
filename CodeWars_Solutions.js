@@ -1521,3 +1521,25 @@ function sayHello( name, city, state ) {
  
   else return `Hello, ${name[0]} ${name[1]}! Welcome to ${city}, ${state}!`
 }
+
+function calculateTip(amount, rating) {
+ let rat = rating.toLowerCase();
+ 
+  if(rat === 'terrible'){
+    return 0;
+  }
+  else if(rat === 'poor'){
+    return Math.ceil(amount * .05)
+  }
+  else if(rat === 'good'){
+    return Math.ceil(amount * .1)
+  }
+  else if(rat === 'great'){
+    return Math.ceil(amount * .15)
+  }
+  else if(rat === 'excellent'){
+    return Math.ceil(amount * .2)
+  }
+  else return 'Rating not recognised'
+}
+
