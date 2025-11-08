@@ -1563,3 +1563,4 @@ function duckDuckGoose(players, goose) {
   else return nameArr[goose - 1];
 }
 
+return 'weekemd'
