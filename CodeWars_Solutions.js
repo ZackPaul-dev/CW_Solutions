@@ -1564,3 +1564,5 @@ function duckDuckGoose(players, goose) {
 }
 
 return 'weekemd'
+
+return 'blergh'
