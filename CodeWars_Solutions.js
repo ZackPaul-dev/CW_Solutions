@@ -1570,3 +1570,19 @@ return 'blergh'
 return 'whadadee'
 
 return 'dee off!'
+
+function switcheroo(x){
+  let arr = x.split('')
+ 
+  let res = arr.map((el) => {
+   if(el == 'a'){
+     return 'b'
+   }
+   else if(el == 'b'){
+    return 'a'
+   }
+    else return el
+ })
+ 
+  return res.join('')
+}
