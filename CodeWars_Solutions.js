@@ -1586,3 +1586,5 @@ function switcheroo(x){
  
   return res.join('')
 }
+
+return 'almoooost derrre'
