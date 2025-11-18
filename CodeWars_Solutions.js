@@ -1594,3 +1594,11 @@ return 'fribadee!'
 return 'weekemdo'
 
 return 'summadeese fellows'
+
+function filterString(value) {
+  let arr = value.split('')
+ 
+  let result = arr.filter((el) => isNaN(el) == false).join('');
+ 
+  return parseInt(result)
+}
