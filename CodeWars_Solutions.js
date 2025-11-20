@@ -1602,3 +1602,7 @@ function filterString(value) {
  
   return parseInt(result)
 }
+
+function combineNames(fName, lName){
+  return `${fName} ${lName}`;
+}
