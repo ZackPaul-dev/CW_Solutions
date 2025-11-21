@@ -1617,3 +1617,19 @@ function lowercaseCount(str){
   else return str.match(regex).length;
  
 }
+
+function bump(x){
+  let count = 0;
+  let arr = x.split('');
+  
+  arr.forEach((el) => {
+    if(el == 'n'){
+      count+= 1;
+    }
+  })
+  
+  if(count > 15){
+    return "Car Dead"
+  }
+  else return "Woohoo!"
+}
