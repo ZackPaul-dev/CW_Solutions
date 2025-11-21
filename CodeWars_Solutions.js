@@ -1606,3 +1606,14 @@ function filterString(value) {
 function combineNames(fName, lName){
   return `${fName} ${lName}`;
 }
+
+function lowercaseCount(str){
+    let regex = /[a-z]/g;
+   
+    if(str.match(regex) === null){
+      return 0
+    }
+ 
+  else return str.match(regex).length;
+ 
+}
