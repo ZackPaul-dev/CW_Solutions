@@ -1650,3 +1650,5 @@ return Thanksgivin
 return 'breako!'
 
 return 'actually Thxgivin'
+
+return 'black fridee'
