@@ -1656,3 +1656,13 @@ return 'black fridee'
 return 'sabdurdee'
 
 return 'baktowork:/'
+
+function findNeedle(haystack) {
+  let needle = 'needle'
+  
+  for(let i = 0; i < haystack.length; i++ ){
+    if(haystack[i] === 'needle'){
+      return `found the needle at position ${i}`
+    }
+  }
+}
