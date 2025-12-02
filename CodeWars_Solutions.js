@@ -1666,3 +1666,5 @@ function findNeedle(haystack) {
     }
   }
 }
+
+return 'fine leather goods!'
