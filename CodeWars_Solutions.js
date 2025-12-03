@@ -1668,3 +1668,14 @@ function findNeedle(haystack) {
 }
 
 return 'fine leather goods!'
+
+function array(string) {
+  let arr = string.split(',').filter((el) => el != ',')
+ 
+  arr = arr.filter((el, ind) => ind > 0 && ind < arr.length-1);
+
+  if(arr.length < 1){
+    return null
+  }
+  else return arr.join(' ')
+}
