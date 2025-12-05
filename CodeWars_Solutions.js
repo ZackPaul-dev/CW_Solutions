@@ -1681,3 +1681,5 @@ function array(string) {
 }
 
 return 'snowdeeee!'
+
+return 'firdo'
