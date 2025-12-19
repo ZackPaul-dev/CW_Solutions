@@ -1705,3 +1705,14 @@ return 'phooodun!'
 return 'demnto'
 
 return 'roofaden!'
+
+function howMuchILoveYou(nbPetals){
+  let num = nbPetals % 6;
+   
+  return num == 1 ? "I love you"
+  : num == 2 ? "a little"
+  : num == 3 ? "a lot"
+  : num == 4 ? "passionately"
+  : num == 5 ? "madly"
+  : "not at all"
+}
