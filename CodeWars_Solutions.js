@@ -1737,3 +1737,12 @@ function cookie(x){
   : typeof x === 'string' ? 'Who ate the last cookie? It was Zach!'
   : 'Who ate the last cookie? It was the dog!'
 }
+
+function remove (string) {
+  let arr = string.split('');
+  arr = arr.filter((el) => el != '!')
+  arr.push('!')
+  console.log(arr)
+  return arr.join('');  
+}
+
