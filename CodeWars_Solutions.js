@@ -1731,3 +1731,9 @@ return 'lets get holidayin!'
 function toBinary(n){
   return Number(n.toString(2));
 }
+
+function cookie(x){
+  return typeof x ==='number' ? 'Who ate the last cookie? It was Monica!'
+  : typeof x === 'string' ? 'Who ate the last cookie? It was Zach!'
+  : 'Who ate the last cookie? It was the dog!'
+}
