@@ -1727,3 +1727,7 @@ function leo(oscar){
 return 'moveee'
 
 return 'lets get holidayin!'
+
+function toBinary(n){
+  return Number(n.toString(2));
+}
