@@ -1746,3 +1746,4 @@ function remove (string) {
   return arr.join('');  
 }
 
+return 'xmas eveeee'
