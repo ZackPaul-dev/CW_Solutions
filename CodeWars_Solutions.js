@@ -1747,3 +1747,16 @@ function remove (string) {
 }
 
 return 'xmas eveeee'
+
+function sortMyString(S) {
+    let evenArr = [];
+  let oddArr = [];
+ 
+  S.split('').forEach((el, ind) => {
+    if(ind == 0 || ind % 2 == 0){
+      evenArr.push(el)
+    }
+    else oddArr.push(el)
+  })
+    return evenArr.join('')+ ' ' + oddArr.join('');
+}
