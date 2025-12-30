@@ -1766,3 +1766,8 @@ return 'boxit'
 return 'bigdee'
 
 return 'wooba'
+
+var templateStrings = function(noun, adjective) {
+  return `${noun} are ${adjective}`
+}
+
