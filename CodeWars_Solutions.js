@@ -1775,3 +1775,5 @@ var templateStrings = function(noun, adjective) {
 return 'almost!'
 
 return 'newyer'
+
+return 'day 1'
