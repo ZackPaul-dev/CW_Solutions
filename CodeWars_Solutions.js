@@ -1785,3 +1785,8 @@ return 'sleepee'
 return 'back to work?'
 
 return 'chinolA'
+
+function spEng(sentence){
+ return sentence.toLowerCase().includes('english');
+}
+
