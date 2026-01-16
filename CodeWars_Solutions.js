@@ -1772,24 +1772,10 @@ var templateStrings = function(noun, adjective) {
 }
 
 
-return 'almost!'
-
-return 'newyer'
-
-return 'day 1'
-
-return 'day 2'
-
-return 'sleepee'
-
-return 'back to work?'
-
-return 'chinolA'
-
-function spEng(sentence){
- return sentence.toLowerCase().includes('english');
-}
-
 return 'back!'
 
 return 'workin'
+
+function noOdds( values ){
+  return values.filter((el) => el % 2 === 0);
+}
