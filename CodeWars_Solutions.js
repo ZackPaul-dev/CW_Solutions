@@ -1804,3 +1804,16 @@ function sameCase(a, b){
 
 }
 
+function evaporator(content, evapPerDay, threshold) {
+ 
+    let day = 0;
+    let lossAmount = content * (evapPerDay / 100);
+    let tAmount = content * (threshold / 100);
+
+  for(let i = content; i > tAmount; i = i - lossAmount){
+    lossAmount = i * (evapPerDay / 100);
+    day++;
+  }
+ 
+    return day;
+}
