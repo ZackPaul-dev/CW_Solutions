@@ -1819,3 +1819,5 @@ function evaporator(content, evapPerDay, threshold) {
 }
 
 return 'snowee'
+
+return 'cccooold'
