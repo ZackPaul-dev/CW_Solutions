@@ -1821,3 +1821,12 @@ function evaporator(content, evapPerDay, threshold) {
 return 'snowee'
 
 return 'cccooold'
+
+function whoIsPaying(name){
+ 
+  let arr = [name, name.substring(0,2)]
+  if(arr[0] === arr[1] || name.length <= 2){
+    return [arr[0]];
+  }
+  else return arr;
+}
