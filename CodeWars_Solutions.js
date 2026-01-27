@@ -1830,3 +1830,15 @@ function whoIsPaying(name){
   }
   else return arr;
 }
+
+function adjacentElementsProduct(array) {
+  
+  let max = array[0] *array[1];
+  
+  array.forEach((el, ind) => {
+    if(el * array[ind +1] > max){
+      max = el * array[ind + 1]
+    }
+  })
+  return max;
+}
