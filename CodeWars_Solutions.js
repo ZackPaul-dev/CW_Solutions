@@ -1842,3 +1842,36 @@ function adjacentElementsProduct(array) {
   })
   return max;
 }
+
+function encode(string) {
+  
+  let arr = string.split('');
+  
+  let codArr = arr.map((el) => {
+    return el === 'a' ? el = '1' :
+    el === 'e' ? el = '2' :
+    el === 'i' ? el = '3' :
+    el === 'o' ? el = '4' :
+    el === 'u' ? el = '5' :
+    el = el;
+  })
+
+  return codArr.join("");
+}
+
+function decode(string){
+  
+  let arr = string.split('');
+  
+  let decodArr = arr.map((el) => {
+    return el === '1' ? el = 'a' :
+    el === '2' ? el = 'e' :
+    el === '3' ? el = 'i' :
+    el === '4' ? el = 'o' :
+    el === '5' ? el = 'u' :
+    el = el;
+  })
+
+  return decodArr.join("");
+  
+}
