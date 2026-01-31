@@ -1936,3 +1936,11 @@ function numberToPower(number, power){
   }
   return number;
 }
+
+function sumOfMinimums(arr) {
+  let min = 0;
+  let sorted = arr.map((el) => el.sort((a ,b) => a - b));
+  sorted.forEach((el) => min+= el[0]);
+  return min;
+  
+}
