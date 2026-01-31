@@ -1924,3 +1924,15 @@ function answer3(){
   //the answer should be "yes" or "no"
   return "yes";
 }
+
+function numberToPower(number, power){
+  console.info(Math.log2(1024));
+  let start = number;
+  if(power === 0){
+    return 1;
+  }
+  for(let i = 1; i < power; i++){
+    number *= start;
+  }
+  return number;
+}
