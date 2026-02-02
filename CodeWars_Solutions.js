@@ -1944,3 +1944,5 @@ function sumOfMinimums(arr) {
   return min;
   
 }
+
+return 'moopola'
