@@ -1955,3 +1955,14 @@ function wordsToMarks(string){
   }
   return result;
 }
+
+function sumOfDifferences(arr) {
+  if(arr.length <= 1){
+    return 0;
+  }
+  let arrSort = arr.sort((a, b) => b-a);
+  let arrDiff = arrSort.map((el, ind) => el - arrSort[ind+1]);
+  arrDiff = arrDiff.slice(0, arrDiff.length -1);
+  return arrDiff.reduce((acc, cum) => acc + cum); 
+  
+}
