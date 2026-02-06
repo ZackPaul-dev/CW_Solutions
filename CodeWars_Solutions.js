@@ -1992,3 +1992,7 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
   }
   else return "Shark Bait!"
 }
+
+function findAverage(nums) {
+  return nums.reduce((a,b) => a +b) / nums.length;
+}
