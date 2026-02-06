@@ -1981,3 +1981,14 @@ var humanYearsCatYearsDogYears = function(humanYears) {
  
   return [humanYears,catYears,dogYears];
 }
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+ if(dolphin){
+   sharkSpeed /= 2;
+ }
+ 
+  if(pontoonDistance / youSpeed < sharkDistance / sharkSpeed){
+    return "Alive!"
+  }
+  else return "Shark Bait!"
+}
