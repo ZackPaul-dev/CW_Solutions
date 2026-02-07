@@ -1996,3 +1996,16 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
 function findAverage(nums) {
   return nums.reduce((a,b) => a +b) / nums.length;
 }
+
+function isPowerOfTwo(n){
+  
+  let log = Math.floor(Math.log2(n));
+  if(n === 0){
+    return false;
+  }
+  else if(n === 1){
+    return true;
+  }
+  
+  else return Math.pow(2, log) === n;
+}
