@@ -2009,3 +2009,15 @@ function isPowerOfTwo(n){
   
   else return Math.pow(2, log) === n;
 }
+
+function factorial(n)
+{
+  let result = 1;
+  if(n < 0 || n > 12){
+    throw RangeError();
+  }
+  else for(let i = n; i > 0; i--){
+    result *= i;
+  }
+  return result;
+}
