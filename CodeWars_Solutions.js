@@ -2023,3 +2023,22 @@ function factorial(n)
 }
 
 return 'pushir'
+
+function twoSum(numbers, target) {
+  let result = [];
+  let start = 0;
+  
+  for(let i = 1; i < numbers.length; i++){
+    if(numbers[start] + numbers[i] === target){
+      result.push(start, i);
+      break;
+    }
+    else if(i === numbers.length - 1){
+      start++;
+      i = 1;
+      console.log(numbers[start])
+    }
+  }
+  console.log(result)
+  return result;
+}
