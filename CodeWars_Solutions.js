@@ -2042,3 +2042,23 @@ function twoSum(numbers, target) {
   console.log(result)
   return result;
 }
+
+function mxdiflg(a1, a2) {
+  a1 = a1.map((el) => el.length);
+  a2 = a2.map((el) => el.length);
+ 
+  let largest = 0;
+  let smallest = 0;
+ 
+  let s1 = a1.sort((a,b) => a - b)
+ 
+  let s2 = a2.sort((a,b) =>a - b)
+ 
+  if(a1.length == 0 || a2.length == 0){
+    return -1
+  }
+  else if(s1[s1.length-1] - s2[0] > s2[s2.length-1] - s1[0]){
+    return s1[s1.length - 1] - s2[0];
+  }
+  else return s2[s2.length - 1] - s1[0];
+}
