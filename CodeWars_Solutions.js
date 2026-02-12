@@ -2062,3 +2062,20 @@ function mxdiflg(a1, a2) {
   }
   else return s2[s2.length - 1] - s1[0];
 }
+
+function evenNumbers(array, number) {
+ 
+  let result = []
+ 
+  array = array.reverse();
+ 
+  for(let i = 0; i <= array.length; i++){
+    if(result.length == number){
+      console.log(result)
+      return result;
+    }
+    else if(array[i] % 2 == 0){
+      result.unshift(array[i])
+    }
+  }
+}
