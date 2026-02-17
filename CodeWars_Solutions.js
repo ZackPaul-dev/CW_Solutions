@@ -2089,3 +2089,17 @@ function joinStrings(string1, string2){
 return 'serious times'
 
 return 'mondorbo'
+
+function uefaEuro2016(teams, scores){
+  
+  let winner = '';
+  if(scores[0] === scores[1]){
+    winner = 'teams played draw.'
+  }
+  else if(scores[0] > scores[1]){
+    winner = `${teams[0]} won!`
+  }
+  else winner = `${teams[1]} won!`
+  
+  return `At match ${teams[0]} - ${teams[1]}, ${winner}`
+}
