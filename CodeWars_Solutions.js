@@ -2115,3 +2115,7 @@ return 'phooooo'
 return 'https://hrf.im/play/arcs-br/mwebujcuoutaalbx'
 
 return 'ooof'
+
+function getASCII(c){
+  return c.charCodeAt(0);
+}
