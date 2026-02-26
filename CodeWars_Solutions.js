@@ -2123,3 +2123,5 @@ function getASCII(c){
 const binaryArrayToNumber = arr => {
   return parseInt(arr.join(''), 2);
 };
+
+return 'boooo'
