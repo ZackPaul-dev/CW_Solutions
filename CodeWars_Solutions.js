@@ -2125,3 +2125,5 @@ const binaryArrayToNumber = arr => {
 };
 
 return 'boooo'
+
+return 'bloogh'
