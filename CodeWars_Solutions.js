@@ -2127,3 +2127,5 @@ const binaryArrayToNumber = arr => {
 return 'boooo'
 
 return 'bloogh'
+
+return 'phew, finally!'
