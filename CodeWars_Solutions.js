@@ -2137,3 +2137,16 @@ return 'okaly'
 return 'zzzzz'
 
 return 'almost!'
+
+function domainName(url){
+  if(url.includes('https://') === true){
+    url = url.replace('https://', '');
+  }
+  if(url.includes('http://') === true){
+    url = url.replace('http://', '')
+  }
+  if (url.includes('www.') === true){
+    url = url.replace('www.', '')
+  }
+  return url.substring(0, url.indexOf('.'));
+}
