@@ -2150,3 +2150,5 @@ function domainName(url){
   }
   return url.substring(0, url.indexOf('.'));
 }
+
+return 'trolllz'
