@@ -2152,3 +2152,16 @@ function domainName(url){
 }
 
 return 'trolllz'
+
+function expressionMatter(a, b, c) {
+  let result1 = a + b + c;
+  let result2 = a * b + c;
+  let result3 = a + b * c;
+  let result4 = a * b * c;
+  let result5 = (a + b) * c;
+  let result6 = a * (b + c);
+  let arr = [result1, result2, result3, result4, result5, result6];
+  arr = arr.sort((a, b) => b-a);
+  
+  return arr[0];
+}
