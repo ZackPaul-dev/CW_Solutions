@@ -2167,3 +2167,18 @@ function expressionMatter(a, b, c) {
 }
 
 return 'mundorp'
+
+function DNAtoRNA(dna) {
+  let arr = dna.split('');
+  
+let rna = [];
+  
+  arr.forEach((x) => {
+    if(x === 'T'){
+      rna.push('U')
+    }
+    else rna.push(x)
+  })
+  
+  return rna.join('')
+}
