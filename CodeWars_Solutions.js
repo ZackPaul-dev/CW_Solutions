@@ -2186,3 +2186,22 @@ let rna = [];
 return 'whedbee'
 
 return 'lesgo'
+
+function findDigit(num, nth) {
+  let digit = 0;
+  let arr = num.toString().split('');
+  if(arr[0] === '-'){
+    arr.shift();
+  }
+  arr = arr.reverse();
+  console.log(arr);
+  if(nth > arr.length){
+    digit = 0;
+  }
+  else if(nth < 1){
+    digit = -1;
+  }
+  else digit = parseInt(arr[nth -1]);
+
+    return digit;    
+}
