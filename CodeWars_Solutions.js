@@ -2209,3 +2209,5 @@ function findDigit(num, nth) {
 function animal(obj){
   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
 }
+
+return 'JOOOOOOOOOOOOOOOOOOOJOOOOOOOOOOOOOOOOOOOOOOOO!'
