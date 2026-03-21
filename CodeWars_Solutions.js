@@ -2215,3 +2215,5 @@ return 'JOOOOOOOOOOOOOOOOOOOJOOOOOOOOOOOOOOOOOOOOOOOO!'
 function typeOfSum(a, b) {
   return typeof (a + b)
 }
+
+return 'waorm'
