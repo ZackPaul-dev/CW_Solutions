@@ -2219,3 +2219,5 @@ function typeOfSum(a, b) {
 return 'waorm'
 
 return 'blup'
+
+return 'mormbo'
