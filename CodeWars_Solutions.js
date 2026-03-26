@@ -2221,3 +2221,11 @@ return 'waorm'
 return 'blup'
 
 return 'mormbo'
+
+function maxDiff(list) {
+  let sorted = list.sort((a, b) => a-b);
+  if(list.length < 2){
+    return 0;
+  }
+  else return sorted[list.length - 1] - sorted[0];
+};
