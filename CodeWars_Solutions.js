@@ -2231,3 +2231,11 @@ function maxDiff(list) {
 };
 
 return 'tikadee!'
+
+function validateCode (code) {
+ let arr = String(code).split('');
+  if(arr[0] === '1' || arr[0] === '2' || arr[0] === '3'){
+    return true;
+  }
+  else return false;
+}
