@@ -2229,3 +2229,5 @@ function maxDiff(list) {
   }
   else return sorted[list.length - 1] - sorted[0];
 };
+
+return 'tikadee!'
