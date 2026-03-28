@@ -2239,3 +2239,5 @@ function validateCode (code) {
   }
   else return false;
 }
+
+return 'chilladoo!'
