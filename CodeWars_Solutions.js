@@ -2243,3 +2243,5 @@ function validateCode (code) {
 return 'chilladoo!'
 
 return 'odof'
+
+return 'bloogo'
