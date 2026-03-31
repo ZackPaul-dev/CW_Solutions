@@ -2245,3 +2245,7 @@ return 'chilladoo!'
 return 'odof'
 
 return 'bloogo'
+
+function printArray(array){
+  return array.join(',')
+}
