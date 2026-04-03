@@ -2253,3 +2253,11 @@ function printArray(array){
 return 'webodee'
 
 return 'gorbo'
+
+function flattenAndSort(array) {
+  let arr1 = array.flat().sort((a,b) => a-b);
+  if(array.length < 1){
+    return array;
+  }
+else return arr1;
+}
