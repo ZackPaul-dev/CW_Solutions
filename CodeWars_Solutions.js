@@ -2265,3 +2265,23 @@ else return arr1;
 return 'cleanbo'
 
 return 'snooozereday'
+
+// function isIsogram(str){
+  let arr = str.toLowerCase().split('');
+  if(str.length == 0){
+    return true;
+  }
+  
+  arr.sort();
+  console.log(arr)
+  
+  for(let i = 0; i < arr.length + 1; i++){
+    if(arr[i] == arr[i+1]){
+      return false;
+      break;
+    }
+  else if(i === arr.length - 1){
+    return true;
+  }
+    else continue;
+  }
