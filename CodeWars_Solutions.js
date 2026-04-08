@@ -2287,3 +2287,12 @@ return 'snooozereday'
   }
 
   return 'uuuurgh'
+
+  function remove(string) {  
+  let arr = string.split('').reverse();
+  
+  while(arr[0] === '!'){
+    arr.shift();
+  }
+  return arr.reverse().join('');
+}
