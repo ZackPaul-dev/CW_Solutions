@@ -2296,3 +2296,15 @@ return 'snooozereday'
   }
   return arr.reverse().join('');
 }
+
+function tidyNumber(n){
+  let arr = String(n).split('');
+  console.log(arr)
+  for(let i = 0; i < arr.length - 1; i++){
+    if(parseInt(arr[i-0]) > parseInt(arr[i+1])){
+      console.log(arr[i]);
+      return false;
+    }
+  }
+  return true;
+}
