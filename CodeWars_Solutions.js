@@ -2308,3 +2308,7 @@ function tidyNumber(n){
   }
   return true;
 }
+
+function digits(n) {
+  return String(n).length;
+}
