@@ -2312,3 +2312,5 @@ function tidyNumber(n){
 function digits(n) {
   return String(n).length;
 }
+
+return 'phoofalo'
