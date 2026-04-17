@@ -2318,3 +2318,14 @@ return 'phoofalo'
 return 'wemsdee'
 
 return 'albost!'
+
+var capitals = function (word) {
+	const regex = /[A-Z]/;
+  let res = [];
+  word.split('').forEach((el, ind) => {
+    if(regex.test(el) === true){
+      res.push(ind);
+    }
+    })
+  return res;
+  }
