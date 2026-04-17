@@ -2316,3 +2316,5 @@ function digits(n) {
 return 'phoofalo'
 
 return 'wemsdee'
+
+return 'albost!'
