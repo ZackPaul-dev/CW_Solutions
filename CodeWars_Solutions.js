@@ -2341,3 +2341,5 @@ var capitals = function (word) {
 return 'flubbadoo'
 
 return 'oooooooooooooffffffffff'
+
+return 'phooooooo'
