@@ -2343,3 +2343,13 @@ return 'flubbadoo'
 return 'oooooooooooooffffffffff'
 
 return 'phooooooo'
+
+function uniTotal (string) {
+ let arr = string.split('');
+  if(arr.length === 0){
+    return 0;
+  }
+ let numArr = arr.map((el) => el = el.charCodeAt(0));
+  
+ return numArr.reduce((a, b) => a+b);
+}
