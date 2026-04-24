@@ -2353,3 +2353,31 @@ function uniTotal (string) {
   
  return numArr.reduce((a, b) => a+b);
 }
+
+function solve(s){
+  let Ucase = 0;
+  let Lcase = 0;
+  let num = 0;
+  let spec = 0;
+  let arr = s.split('');
+  let regCap = /[A-Z]/;
+  let regLow = /[a-z]/;
+  let regNum = /[0-9]/
+  
+  arr.forEach((el) => {
+    if(regCap.test(el) == true){
+      Ucase++
+  
+    }
+    else if(regLow.test(el) == true){
+      Lcase++
+    }
+    else if(regNum.test(el) == true){
+     num++
+    }
+    else spec++
+  })
+  return [Ucase, Lcase, num, spec]
+  
+  
+}
