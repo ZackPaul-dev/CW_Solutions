@@ -2387,3 +2387,12 @@ return 'garagelo'
 function hexToDec(hexString){
   return parseInt(hexString, 16);
 }
+
+function alphabetic(s) {
+  let alpha = s.split('').sort().join('');
+  
+  if(alpha === s){
+    return true;
+  }
+  else return false;
+}
