@@ -2396,3 +2396,19 @@ function alphabetic(s) {
   }
   else return false;
 }
+
+function nearestSq(n){
+  
+  let upSqr = Math.ceil(Math.sqrt(n));
+  let lowSqr = Math.floor(Math.sqrt(n));
+  let big = upSqr**2;
+  let small = lowSqr**2;
+  
+  if(upSqr === lowSqr){
+    return n
+  }
+  else if(big - n > n - small){
+    return small;
+  }
+  else return big;
+}
