@@ -2446,3 +2446,15 @@ return 'steemee'
 return 'whoof'
 
 return 'back2work'
+
+function oddOrEven(array) {
+
+  if(array.length === 0){
+    return 'even'
+  }
+  else if(array.reduce((a, b) => a+b) % 2 === 0){
+    return 'even'
+  }
+  else return 'odd'
+
+}
