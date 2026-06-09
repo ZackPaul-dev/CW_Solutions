@@ -2496,3 +2496,5 @@ return ' weeeekemnd'
 return 'phwerg'
 
 return 'whatsyeroffer?!'
+
+return 'morndog'
