@@ -2500,3 +2500,5 @@ return 'whatsyeroffer?!'
 return 'morndog'
 
 return 'woowoowoohoo!'
+
+return 'time2gooooo!'
