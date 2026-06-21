@@ -2510,3 +2510,5 @@ return 'workdoro'
 return 'woobaloo!'
 
 return 'phoof'
+
+return 'opened huset'
