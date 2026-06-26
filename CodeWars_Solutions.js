@@ -2520,3 +2520,5 @@ return 'zzzz'
 return 'toooooooo hott'
 
 return 'still hottt'
+
+return 'rainadane!'
