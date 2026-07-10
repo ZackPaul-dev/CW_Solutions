@@ -2548,3 +2548,5 @@ return 'gooosto'
 return ' zzzzzzzzzzzzzzzzzzzzzzz'
 
 return 'jojo'
+
+return 'frido'
