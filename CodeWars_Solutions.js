@@ -2556,3 +2556,5 @@ return 'weekadee'
 return 'oooofa'
 
 return 'raaaaain!'
+
+return 'cooolo'
