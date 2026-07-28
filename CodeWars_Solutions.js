@@ -2576,3 +2576,5 @@ return 'frubbadooo'
 return 'sabutda'
 
 return 'summadeor'
+
+return 'toooo hot!'
